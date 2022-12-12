@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.row {
+  display: flex;
+}
+
+img {
+    object-fit: contain;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px 40px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Vacuoles</h1>
+
+<div class="row">
+  <div class="column">
+    <img src = "{% static 'vacuolediagram.jpg' %}" width = 500 height = 400 class = 'center' />
+  </div>
+  <div class="column">
+    <h2>Functions:</h2>
+    <p>
+        Vacuoles can be viewed as specialised lysosomes, as their main purpose is to handle waste products. They are able to store
+        waste products, such as excess water, to maintain balance within a cell. It can also serve to collect harmful toxins, whether
+        to be secreted outside the cell or to be brought inside to be converted into safer compounds.
+    </p>
+    <br></br>
+    <p>
+      <u><center><a href="javascript:history.back()">return home</a></center></u>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

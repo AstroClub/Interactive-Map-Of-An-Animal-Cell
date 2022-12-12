@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.row {
+  display: flex;
+}
+
+img {
+    object-fit: contain;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px 40px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Mitochondria</h1>
+
+<div class="row">
+  <div class="column">
+    <img src = "{% static 'mitochondriadiagram.png' %}" width = 500 height = 400 class = 'center' />
+  </div>
+  <div class="column">
+    <h2>Functions:</h2>
+    <p>
+        Mitochondria mainly perform cellular respiration, also known as aerobic respiration. The 3 stages of cellular respiration as
+        follows:
+    </p>
+    <p>
+        &#x2022; Glycolysis occurs in the cytoplasm and involves converting a 6-carbon carbohydrate glucose into two 3-carbon complexes
+        called pyruvate through a series of enzyme-catalysed reactions. This produces a small amount of ATP quickly without using
+         oxygen, but is inefficient and produces lactic acid as a byproduct.
+      </p>
+      <p>
+        &#x2022; To maximise the amount of ATP produced, pyruvate undergoes the Citric Acid Cycle, also called the Krebs Cycle.
+        Pyruvate enters the mitochondria and is oxidised to form carbon dioxide, converting some ADP to ATP in the process while
+        also reducing NAD+ and FAD+ to NADH and FADH<sub>2</sub> respectively.
+      </p>
+      <p>
+        &#x2022; Afterwards, Oxidative Phosphorylisation occurs where the NADH and FADH<sub>2</sub> transfer the electrons from pyruvate
+        to the Electron Transport Chain, where they are transferred to multiple proteins before being reduced from oxygen to water. ATP
+        is synthesised by the energy released in the Electron Transport Chain, and this is where most ATP is produced.
+      </p>
+      <p>
+        Mitochondria are also involved for ion homeostasis and apoptosis.
+      </p>
+    <br></br>
+    <p>
+      <u><center><a href="javascript:history.back()">return home</a></center></u>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

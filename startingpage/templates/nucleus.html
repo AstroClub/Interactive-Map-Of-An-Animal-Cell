@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.row {
+  display: flex;
+}
+
+img {
+    object-fit: contain;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px 40px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Nucleus</h1>
+
+<div class="row">
+  <div class="column">
+    <img src = "{% static 'nucleusdiagram.png' %}" width = 500 height = 400 class = 'center' />
+  </div>
+  <div class="column">
+    <h2>Functions:</h2>
+    <p>
+        The nucleus is important in storing hereditary information (DNA) and coordinating cellular activities such as growth, metabolism,
+        protein synthesis and cell division. It is surrounded by the endoplasmic reticulum. The nucleolus synthesises ribosomes while
+        chromatin contains the uncondensed chromosomes.
+    </p>
+    <br></br>
+    <p>
+      <u><center><a href="javascript:history.back()">return home</a></center></u>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

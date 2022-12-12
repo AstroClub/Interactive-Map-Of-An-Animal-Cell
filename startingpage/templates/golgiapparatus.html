@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.row {
+  display: flex;
+}
+
+img {
+    object-fit: contain;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px 40px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Golgi Apparatus</h1>
+
+<div class="row">
+  <div class="column">
+    <img src = "{% static 'golgidiagram.png' %}" width = 500 height = 400 class = 'center' />
+  </div>
+  <div class="column">
+    <h2>Functions:</h2>
+    <p>The golgi apparatus functions like a factory, where proteins are prepared for transport to other areas of the cell. </p>
+    <p>
+      &#x2022; These proteins enter through the "cis" face, closest to the endoplasmic reticulum (ER), in clusters of fused
+      transport vesicles. Vesicles are small sacs formed by the membrane wrapping around substances in order to transport
+      them across the cell.
+    </p>
+    <p>
+      &#x2022; This cluster eventually fuses with the cis membrane, and the contents are delivered to the lumen. The lumen
+      is responsible for protein modification, using enzymes to change the portion of carbohydrates/sugars within the
+      protein by adding or subtracting individual sugar monomers, amongst other modifications.
+    </p>
+    <p>
+      &#x2022; These modified proteins are finally packaged into vesicles at the "trans" face, where they are either transported
+      to other areas of the cell or secreted outside the cell through exocytosis.
+    </p>
+    <br></br>
+    <p>
+      <u><center><a href="javascript:history.back()">return home</a></center></u>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

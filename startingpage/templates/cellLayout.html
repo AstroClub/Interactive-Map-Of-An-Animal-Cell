@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    text-align: center;
+    font-size: large;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Map of an Animal Cell</h1>
+<p>Click on a specific area of the image in order to learn more on that organelle.</p>
+
+<img src = "{% static 'cell.png' %}" usemap = "#cellmap">
+<!--only do cell membrane if you have time-->
+
+<map name="cellmap">
+    <area target="" alt="golgiapparatus" title="golgi apparatus" href="golgiapparatus.html" coords="254,618,453,727" shape="rect">
+    <area target="" alt="vacuole1" title="vacuoles" href="vacuoles.html" coords="531,558,619,649" shape="rect">
+    <area target="" alt="vacuole2" title="vacuoles" href="vacuoles.html" coords="682,703,749,800" shape="rect">
+    <area target="" alt="vacuole3" title="vacuoles" href="vacuoles.html" coords="655,252,578,165" shape="rect">
+    <area target="" alt="ribosomes1" title="ribosomes" href="ribosomes.html" coords="202,572,50" shape="circle">
+    <area target="" alt="ribosomes2" title="ribosomes" href="ribosomes.html" coords="652,674,36" shape="circle">
+    <area target="" alt="ribosomes3" title="ribosomes" href="ribosomes.html" coords="742,470,50" shape="circle">
+    <area target="" alt="lysosomes1" title="lysosomes" href="lysosomes.html" coords="405,782,19" shape="circle">
+    <area target="" alt="lysosomes2" title="lysosomes" href="lysosomes.html" coords="616,835,13" shape="circle">
+    <area target="" alt="lysosomes3" title="lysosomes" href="lysosomes.html" coords="816,463,14" shape="circle">
+    <area target="" alt="lysosomes4" title="lysosomes" href="lysosomes.html" coords="646,452,14" shape="circle">
+    <area target="" alt="nucleus" title="nucleus" href="nucleus.html" coords="393,360,122" shape="circle">
+    <area target="" alt="mitochondria1" title="mitochondria" href="mitochondria.html" coords="471,711,597,793" shape="rect">
+    <area target="" alt="mitochondria2" title="mitochondria" href="mitochondria.html" coords="795,548,716,647" shape="rect">
+    <area target="" alt="mitochondria3" title="mitochondria" href="mitochondria.html" coords="638,290,745,412" shape="rect">
+    <area target="" alt="roughER1" title="rough endoplasmic reticulum" href="ER.html" coords="263,305,215,256,247,175,359,132,461,145,532,191,547,259,537,293,457,242,391,217,327,241,287,289" shape="poly">
+    <area target="" alt="roughER2" title="rough endoplasmic reticulum" href="ER.html" coords="204,345,185,369,227,499,280,558,349,589,453,582,455,556,439,503,365,488,312,460,280,419,259,363,261,323,251,302,218,327" shape="poly">
+    <area target="" alt="smoothER" title="smooth endoplasmic reticulum" href="ER.html" coords="560,295,529,340,526,389,512,403,510,420,491,451,495,474,534,529,554,522,582,489,595,449,589,329,574,301" shape="poly">
+</map>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.row {
+  display: flex;
+}
+
+img {
+    object-fit: contain;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0px 40px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Lysosomes</h1>
+
+<div class="row">
+  <div class="column">
+    <img src = "{% static 'lysosomediagram.jpg' %}" width = 500 height = 400 class = 'center' />
+  </div>
+  <div class="column">
+    <h2>Functions:</h2>
+    <p>
+        Lysosomes contain digestive enzymes (hydrolytic enzymes) which allow them to break down defective or old organelles, food 
+        particles and engulfed viruses or bacteria. They also help cells which are damaged beyond repair to engage in programmed 
+        cell death, also known as apoptosis.
+    </p>
+    <br></br>
+    <p>
+      <u><center><a href="javascript:history.back()">return home</a></center></u>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
